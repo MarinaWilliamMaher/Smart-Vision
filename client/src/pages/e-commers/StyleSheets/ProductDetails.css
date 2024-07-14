@@ -1,0 +1,268 @@
+.productDetailMain {
+  padding: 0 4rem 1rem;
+}
+
+.productDetailDivForImgAndData {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px rgba(162, 162, 162, 0.785) solid;
+  padding-bottom: 2rem;
+}
+
+.productDetailImages {
+  width: 50%;
+}
+
+.productDetailMainImg {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.productDetailSubImages {
+  display: flex;
+}
+
+.productDetailSubImag {
+  border: 1px solid rgb(129, 129, 129);
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  width: 25%;
+  height: 100px;
+}
+
+.productDetailData {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 0.5rem 2rem;
+}
+
+.productDetailData h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.productDetailCategory {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.productDetailCategory h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.productDetailCategory p {
+  margin-left: 0.5rem;
+  font-size: 24px;
+}
+
+.productDetailRating {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.productDetailRating p {
+  margin: 0rem 1rem;
+  font-size: 20px;
+}
+
+.productDetailDescription {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.productDetailColors {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.productDetailColors p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.productDetailColors span {
+  font-size: 20px;
+}
+
+.productDetailsPrice {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.productDetailsDataFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.productDetailsAddToCart {
+  color: #ffffff;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+
+.productDetailsAddToCart:hover {
+  background-color: rgb(108, 33, 178);
+}
+
+.productDetailReviews {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: 2rem;
+  width: 100%;
+}
+
+.productDetailReviewsDetails {
+  width: 30%;
+}
+
+.productDetailReviewsDetails h4 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0.5rem;
+}
+
+.productDetailReviewsData {
+  width: 70%;
+  padding: 0 2rem;
+}
+
+.productDetailRatingForReviews {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productDetailRatingForReviews p {
+  margin: 0rem 0.5rem;
+  font-size: 17px;
+}
+
+.productDetailRatingBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.productDetailRatingAllBars {
+  padding: 1rem;
+}
+
+.productDetailProgressBar {
+  width: 67%;
+  height: 12px;
+  border-radius: 10px;
+}
+
+.productDetailProgressBar .bg-warning {
+  border-radius: 20px;
+}
+
+.productDetailReviewsFooter {
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+.productDetailReviewsFooter h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.productDetailReviewsFooter {
+  margin-left: 0.5rem;
+}
+
+.productDetailNoReviews {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.productDetailNoReviews h5 {
+  text-align: center;
+  margin: auto;
+  color: #a7a7a7;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.showMoreReviews {
+  text-align: center;
+  margin-top: -12px;
+  color: #a7a7a7;
+  font-size: 18px;
+}
+
+.showMoreReviews:hover {
+
+  color: #7a7a7a;
+}
+
+@media screen and (max-width: 1010px) {
+  .productDetailMain {
+    padding: 0 2rem 1rem;
+  }
+
+  .productDetailRating p {
+    margin: 0rem;
+  }
+}
+
+@media screen and (max-width: 807px) {
+  .productDetailImages {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .productDetailData {
+    width: 100%;
+    padding: 0;
+    padding-right: 1rem;
+  }
+
+  .productDetailReviewsData {
+    width: 100%;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .productDetailReviewsDetails {
+    width: 100%;
+  }
+
+  .productDetailRatingAllBars {
+    padding: 0.5rem;
+  }
+
+  .productDetailReviews {
+    margin-top: 2rem;
+  }
+
+  .productDetailReviewsFooter {
+    padding-bottom: 2rem;
+    border-bottom: 2px rgba(162, 162, 162, 0.785) solid;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .productDetailMain {
+    padding: 0 1rem 1rem;
+  }
+
+  .productDetailMainImg {
+    height: 400px;
+  }
+}

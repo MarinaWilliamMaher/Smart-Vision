@@ -1,0 +1,86 @@
+.Filter h2 {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Filter {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+
+.dropDown {
+  position: absolute;
+  top: 4rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 10000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 18rem;
+  padding: 20px 20px;
+  max-height: 20rem;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.correctSign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.filters-container {
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 2px solid black;
+  margin-bottom: 3rem;
+  padding-block: 1.5rem;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 580px) {
+  .filters-container {
+    margin-bottom: 3rem;
+    gap: 16px;
+  }
+
+  .Filter {
+    margin-right: 0;
+  }
+
+  .Filter h2 {
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .dropDown {
+    width: 15rem;
+  }
+
+  .categorydropDown {
+    left: 0rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .dropDown {
+    top: 4rem;
+    left: 0rem;
+  }
+}

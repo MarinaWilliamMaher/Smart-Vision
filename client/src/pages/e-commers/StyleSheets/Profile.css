@@ -1,0 +1,133 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.sbProfileHeader {
+  margin: 0.5rem;
+  flex-direction: row;
+}
+
+.sbProfileHeader h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.sbProfileHeader p {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.sbProfileHeader p button:hover {
+  text-decoration: underline;
+}
+.sbProfile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sbProfileDiv {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.sbProfileDivLeft {
+  background-color: #a1a1a1;
+}
+.sbProfileDivLeft img {
+  width: 100%;
+  height: 500px;
+}
+.sbProfileDivLeft h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0.5rem;
+}
+.sbProfileDivLeft p {
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.sbProfileDivRight {
+  margin: 0rem 5rem;
+}
+.sbProfileDivRight h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  padding-bottom: 3rem;
+}
+
+.sbProfileDivRight ul li {
+  border-bottom: 1px solid rgb(180, 180, 180);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.sbProfileDivRight ul li:hover {
+  text-decoration: underline;
+}
+
+.profileLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sbProfileLink {
+  display: flex;
+  align-items: center;
+}
+
+.sbProfileLinkContant {
+  margin-left: 1rem;
+}
+
+.sbProfileLinkContant h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.sbProfileLinkContant p {
+  font-size: 18px;
+  color: #626262;
+}
+
+.sbProfileLinkIcon {
+  width: 25px;
+  height: 25px;
+}
+@media screen and (max-width: 1150px) {
+  .sbProfileDiv {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .Profile {
+    padding: 1rem;
+  }
+  .sbProfileDivRight {
+    margin: 0rem 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sbProfileDivLeft img {
+    width: 100%;
+    height: 350px;
+  }
+  .sbProfileDivLeft h2 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .sbProfileDivLeft p {
+    font-size: 22px;
+  }
+}
+
+.sbProfileLinkIcon.arabic {
+  margin-left: 20px; 
+}

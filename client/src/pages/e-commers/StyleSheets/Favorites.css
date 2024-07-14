@@ -1,0 +1,49 @@
+.favoritesMain {
+  padding: 0rem 2rem;
+}
+
+.favoritesMain h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 1rem .5rem;
+}
+
+.favoritesProductes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.EmptyfavoriteProducte {
+  display: flex;
+  justify-content: center;
+  height: 25vh;
+}
+
+.EmptyfavoriteProducte h2 {
+  margin: auto;
+  font-size: 38px;
+  font-weight: 600;
+  color: #949494;
+  text-align: center;
+}
+
+@media screen and (max-width: 635px) {
+  .favoritesProductes {
+    justify-content: center;
+  }
+
+  .EmptyfavoriteProducte h2 {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .EmptyfavoriteProducte h2 {
+    font-size: 30px;
+  }
+
+  .favoritesProductes {
+    justify-content: center;
+  }
+}

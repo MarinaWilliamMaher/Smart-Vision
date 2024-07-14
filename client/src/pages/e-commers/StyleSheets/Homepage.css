@@ -1,0 +1,107 @@
+.home-slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.Home {
+  width: 85%;
+  margin: auto;
+}
+.Home h2 {
+  margin-bottom: 3rem;
+  margin-left: 25px;
+}
+
+.category-cards {
+  display: flex;
+  width: 97%;
+  overflow-x: auto;
+  margin: auto;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+/* Style for the scrollbar */
+.category-cards::-webkit-scrollbar {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  height: 5px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.category-cards::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.category-cards::-webkit-scrollbar:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.category-card {
+  flex: 0 0 auto;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.category-card.active {
+  opacity: 1;
+}
+
+.category-card img {
+  width: 200px;
+  height: auto;
+}
+
+.home-slider-container .overlay .presenterarrow {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay .presenterarrow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.home-slider-container .presenterarrow {
+  visibility: hidden;
+}
+
+.home-slider-container:hover .presenterarrow {
+  visibility: visible;
+}
+.line-container {
+  display: flex;
+  width: 97%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @media screen and (max-width: 825px) {
+  .home-product-slider {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .home-product-slider {
+    width: 90%;
+    margin: auto;
+  }
+} */

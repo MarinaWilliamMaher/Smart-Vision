@@ -1,0 +1,213 @@
+/* .filters-container {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+} */
+.Store-Filter h2 {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);  
+}
+.Store-filters-container .Store-Filter {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  margin-right: 0.2rem;
+}
+.dropDown {
+  position: absolute;
+  top: 4rem;
+  /* left: rem; */
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 10000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 18rem;
+  padding: 20px 20px;
+  max-height: 20rem;
+  overflow-y: auto;
+  text-align: center;
+}
+.Store-filters-container .categorydropDown {
+  left: 20%;
+}
+.Store-filters-container .pricedropDown {
+  left: -5rem;
+}
+.Store-filters-container .sortdropDown {
+  left: -10rem;
+}
+.Store-filters-container .colorDropDown {
+  left: -14.4rem;
+  max-height: 12rem;
+}
+.store-container {
+  width: 100%;
+  position: relative;
+}
+.Store-filters-container .correctSign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Store-filters-container {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 2px solid black;
+  margin-bottom: 3rem;
+  padding-top:2rem;
+}
+.Store-filters-container .colorDropDown {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Store-filters-container .categoryOption,
+.Store-filters-container .sortOption {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  gap: 1rem;
+  row-gap:2rem;
+  margin-bottom: 2rem;
+}
+.Store-filters-container .colorOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+.Store-filters-container .circleContainer {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  position: relative;
+}
+/* .colorCircle {
+  width: 20px;
+  height: 20px; 
+  border-radius: 50%;
+  margin-right: 10px;
+} */
+.emptyCircle {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.filledCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.colorCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  /* margin-right: 13px; */
+  border: 1px solid #ccc;
+}
+.filledCircle.black {
+  background-color: black;
+}
+
+.filledCircle.gray {
+  background-color: #d2d1d1;
+}
+
+.categoryOption:hover .filledCircle.gray,
+.sortOption:hover .filledCircle.gray {
+  visibility: visible;
+}
+
+.categoryOption .filledCircle.black,
+.sortOption .filledCircle.black {
+  visibility: visible;
+}
+
+.store-container .arrow {
+  display: none;
+}
+@media only screen and (min-width: 580px) {
+  .Store-filters-container .Store-Filter {
+    margin-right: 2rem;
+  }
+  .Store-Filter h2 {
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .dropDown {
+    width: 15rem;
+  }
+  .Store-filters-container .categorydropDown {
+    left: 0rem;
+  }
+  .Store-filters-container .pricedropDown {
+    left: 0rem;
+  }
+  .Store-filters-container .sortdropDown {
+    left: 0rem;
+  }
+  .Store-filters-container .colorDropDown {
+    left: -8rem;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .dropDown {
+    top: 4rem;
+    left: 0rem;
+  }
+}
+@media only screen and (min-width: 725px) {
+  .products-container {
+    justify-content: space-between;
+  }
+  .Store-filters-container{
+    justify-content: flex-start;
+  }
+  .Store-filters-container .colorDropDown {
+    left: 0rem;
+}
+}
+@media only screen and (min-width: 1280px) {
+  .store-container .arrow {
+    display: inline;
+  } 
+  .dropDown {
+    top: 4rem;
+    left: 0rem;
+  }
+}

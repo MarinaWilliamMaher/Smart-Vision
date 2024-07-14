@@ -1,0 +1,127 @@
+.BagContent {
+  padding-inline: 3rem;
+  margin-bottom: 2rem;
+}
+
+.BagIsEmptyDiv {
+  display: flex;
+  justify-content: center;
+  height: 35vh;
+}
+
+.BagIsEmptyDiv div {
+  margin: auto;
+  font-weight: 600;
+  color: #949494;
+  text-align: center;
+}
+
+.BagIsEmptyDiv h2 {
+  font-size: 40px;
+}
+
+.BagIsEmptyDiv p {
+  font-size: 28px;
+}
+
+.BagContent p {
+  font-size: 18px;
+  color: #555;
+}
+
+.BagList {
+  list-style: none;
+}
+
+.BagContent img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.RemoveButton:hover,
+.FavouriteButton:hover {
+  background-color: rgb(245, 229, 229);
+}
+
+.quantity-controls {
+  border: 1px solid black;
+  margin-top: 15px;
+  text-align: center;
+  width: 130px;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.checkoutButton {
+  margin: auto !important;
+  text-transform: capitalize !important;
+  height: 60px;
+  border-radius: 30px !important;
+  font-size: 20px !important;
+  width: 50%;
+}
+
+.BagTotalPrice {
+  font-size: 30px !important;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+@media (max-width:670px) {
+  .BagContent {
+    padding-inline: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .BagTotalPrice {
+      font-size: 28px !important;
+
+    }
+  .BagContent img {
+    max-width: 25%;
+    max-height: 120px;
+    margin-bottom: 0;
+  }
+
+  .BagList li {
+    max-width: 100vw;
+  }
+
+  .BagHeader {
+    margin-top: 0px;
+  }
+
+  .quantity-controls {
+    margin-top: 15px;
+    padding: 0px;
+    font-size: 16px;
+    max-width: 100px;
+  }
+
+  .clickButtons {
+    display: flex;
+    margin-left: 0px;
+  }
+}
+
+
+
+
+@media (max-width:380px) {
+  .BagIsEmptyDiv {
+    height: 25vh;
+  }
+
+  .BagIsEmptyDiv h2 {
+    font-size: 30px;
+  }
+
+  .BagIsEmptyDiv p {
+    font-size: 24px;
+  }
+}

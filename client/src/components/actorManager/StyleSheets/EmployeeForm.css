@@ -1,0 +1,85 @@
+.employeeFormMain {
+    padding-inline: 2rem;
+}
+
+.employeeFormDivForTowFields {
+    display: flex;
+}
+
+.employeeFormDivForTowFields .InputGroup {
+    width: 50%;
+}
+
+.employeeFormDivForTowFields .FormLabel {
+    font-size: 26px;
+}
+
+.employeeFormHeader {
+    display: flex;
+    align-items: center;
+}
+
+.employeeFormHeader h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: .5rem;
+}
+
+.employeeFormHeader button {
+    margin-top: .5rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: .8rem 1rem;
+    background-color: brown;
+    color: white;
+    border-radius: 1rem;
+    font-weight: 600;
+    box-shadow:
+        0 0 5px 1px brown
+}
+
+.employeeFormHeader button:hover {
+    background-color: rgb(148, 39, 39);
+    transition: .5s;
+    box-shadow:
+        0 0 10px 1px brown
+}
+
+.employeePhoneInput::-webkit-outer-spin-button,
+.employeePhoneInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: var(--bs-form-invalid-border-color) !important;
+    padding-right: calc(1.5em + .75rem) !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right calc(.375em + .1875rem) center !important;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem) !important;
+}
+
+@media screen and (max-width:564px) {
+    .employeeFormMain {
+        padding-inline: .5rem;
+    }
+}
+
+@media screen and (max-width:513px) {
+    .employeeFormDivForTowFields {
+        flex-wrap: wrap;
+    }
+
+    .employeeFormDivForTowFields .InputGroup {
+        width: 100%;
+    }
+
+    .customerFormHeader button {
+        margin-right: 0;
+        padding: .4rem .5rem;
+        margin-top: .5rem;
+    }
+
+}

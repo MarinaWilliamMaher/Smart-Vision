@@ -1,0 +1,124 @@
+.employeeHeaderMain {
+    width: 100%;
+    height: 80px;
+    background-color: #dcdcdc;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-inline: 1rem;
+    position: relative;
+    direction: ltr ;
+}
+
+.employeeHeaderLogo {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.employeeHeaderLogo span {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: .5rem;
+}
+
+.employeeHeaderLogo img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.employeeHeaderLinks {
+    width: calc(100% - 360px);
+    display: flex;
+    gap: 1rem;
+}
+
+.employeeHeaderLinks a {
+    font-size: 20px;
+    color: #000000;
+}
+
+.employeeHeaderLinks a:hover {
+    color: #696969;
+}
+
+.employeeHeaderLinks a.active {
+    color: #696969;
+}
+
+.employeeHeaderLogoutIcon {
+    margin-left: auto;
+}
+
+.employeeHeaderDehazeIcon {
+    margin-left: auto;
+    display: none;
+}
+
+.employeeHeaderOffcanvasLinks a {
+    font-size: 28px;
+    font-weight: 600;
+    display: block;
+}
+
+.employeeHeaderOffcanvasLinks a.active {
+    color: #696969;
+}
+
+
+.notifications{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: white;
+    border-radius: 20px;
+    color: #000;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.notification{
+    color: #000;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.readBtn{
+    color: #fff;
+    background: #009688;
+    width: 80%;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+@media screen and (max-width:750px) {
+    .employeeHeaderLinks {
+        display: none;
+    }
+
+    .employeeHeaderLogoutIcon {
+        display: none;
+    }
+
+    .employeeHeaderDehazeIcon {
+        display: block;
+    }
+
+    .employeeHeaderLogo {
+        margin-right: .5rem;
+    }
+}
+
+@media screen and (max-width:361px) {
+    .employeeHeaderLogo span {
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .employeeHeaderLogo img {
+        width: 3rem;
+        height: 3rem;
+    }
+}

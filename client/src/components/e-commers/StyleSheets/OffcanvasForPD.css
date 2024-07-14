@@ -1,0 +1,22 @@
+.offcanvas {
+  --bs-offcanvas-width: 600px;
+}
+
+@media screen and (max-width: 800px) {
+  .offcanvas {
+    --bs-offcanvas-width: 400px;
+  }
+}
+.FormLabel{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.InputGroup{
+    margin: .5rem;
+}
+
+.InputField{
+    height: 3.5rem;
+    font-size: 20px;
+}

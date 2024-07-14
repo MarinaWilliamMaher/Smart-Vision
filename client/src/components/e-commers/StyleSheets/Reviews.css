@@ -1,0 +1,35 @@
+.productDetailUserReview {
+  border-bottom: 2px rgba(162, 162, 162, 0.785) solid;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.productDetailUserReview p {
+  margin-bottom: 1rem;
+}
+
+.productDetailUserReview h6 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.addReviewHeader {
+  font-size: 26px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.buttonForReview {
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 100px;
+}
+
+.reviewMenuButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

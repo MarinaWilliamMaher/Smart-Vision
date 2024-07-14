@@ -1,0 +1,28 @@
+.image-carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.image-carousel-wrapper {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: carousel-slide 10s linear infinite; /* Adjust duration as needed */
+}
+
+.carousel-image {
+    width: 150px;
+    height: auto;
+    margin-right: 10px; /* Adjust gap between images */
+}
+
+@keyframes carousel-slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

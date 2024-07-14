@@ -1,0 +1,136 @@
+.editProductMain {
+    padding-inline: 3rem;
+}
+
+.editProductMain h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.editProductFormMainDiv {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.editProductFormImages {
+    width: 50%;
+}
+
+.editProductFormAllData {
+    width: 50%;
+}
+
+.editPriductFromCheckBoxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 2px solid rgb(141, 141, 141);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.editProductFormCheckBox {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.editProductCategoryAndPriceDiv {
+    width: 100%;
+    display: flex;
+}
+
+.suEditProductCategoryAndPriceDiv {
+    width: 50%;
+}
+
+.InputGroup {
+    margin-bottom: 1rem;
+}
+
+.editProductFromImagesDiv {
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-around;
+    border: 1px solid rgba(157, 157, 157, 0.587);
+    border-radius: 5px;
+}
+
+.editProductFormImageDiv {
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid rgb(157, 157, 157);
+    width: 47%;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.editProductFromImage {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.editProductFormDeleteImage {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.editProductFormImageDiv:hover .editProductFormDeleteImage {
+    opacity: 1;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.editProductFormImageDiv:hover .editProductFromImage {
+    opacity: .3;
+}
+
+
+@media screen and (max-width:1230px) {
+    .editProductFormImageDiv {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width:965px) {
+    .editProductFormMainDiv {
+        flex-wrap: wrap;
+    }
+
+    .editProductFormImages {
+        width: 100%;
+    }
+
+    .editProductFormAllData {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:531px) {
+    .editProductMain {
+        padding-inline: 1rem;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .editProductFormImageDiv {
+        width: 100%;
+    }
+
+    .editProductCategoryAndPriceDiv {
+        flex-wrap: wrap;
+    }
+
+    .suEditProductCategoryAndPriceDiv {
+        width: 100%;
+    }
+}
